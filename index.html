@@ -7,6 +7,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
    <link rel="stylesheet" type="text/css" href="style.css" />
 
+   <script src="script_send_form.js"></script>
 </head>
 <body>
    <main id="main">
@@ -89,27 +90,30 @@
 
       <section id="contact-section" class="contact-section">
          <div class="form-container">
-            <form>
+            <form id="form-contato">
                <h2>CONTATAREMOS VOCÊ!</h2>
                <p>Preencha este formulário que entraremos em contato brevemente.</p>
                <div class="form-group">
-                  <input type="text" placeholder="Seu nome">
+                  <input type="text" id="nome" name="nome" placeholder="Seu nome">
                </div>
                <div class="form-group">
-                  <input type="email" placeholder="Seu email">
+                  <input type="email" id="email" name="email" placeholder="Seu email">
                </div>
                <div class="form-group">
-                  <textarea placeholder="Sua mensagem"></textarea>
+                  <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
                </div>
-               <button type="submit">Enviar</button>
+               <button type="button" onclick="enviarForm()">Enviar</button>
             </form>
+            
          </div>
       </section>
       </main>
       <footer>
          <p>© 2023 Todos os direitos reservados.</p>
       </footer>
+      
       <script src="script.js"></script>
+
 
 </body>
 
